@@ -1,0 +1,11 @@
+git init
+git config user.name "saragomez"
+git config user.email xarisgomez@gmail.com
+git config --list
+git clone https://github.com/deisyA/Ciclo3.git
+Edit, add or delete files
+git add -A
+git commit -m "El amor nos tiene asi"
+check taht your repository is up to date
+git push origin master
+
