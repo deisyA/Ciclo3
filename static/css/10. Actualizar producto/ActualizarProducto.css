@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{ text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+        
+}
+p{font-family: sans-serif;
+    text-align: center;
+
+
+}
+h2{text-align: center;
+    size: 100px;
+}
+
+      
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 15px solid rgb(177, 213, 243);
+}
+#container{
+    width: 50%;
+    margin: 0 auto ;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+   
+  
+}
+header {
+    float: left;
+    background: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;   
+    line-height: 60px;  
+    border-bottom: 1px solid black;
+     
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    margin-right: 4%;
+   
+
+}
+
+#img1{
+    border-right: 1px solid black;
+}
+
+
+#content{
+    background: rgb(177, 213, 243);
+    padding-top: 50px;
+    padding-bottom: 20px;  
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+#cajafondo{
+    background: rgb(255, 255, 255);
+    margin: 3px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:3px;
+
+}
+
+#titulo1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textos{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+#barraBuscar{
+    text-align: center;
+    height: 60px;
+    width: 690px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 60px;    
+}
+
+#palabraclave{
+    width:70%;
+    height: 40px;
+    padding:3px 10px;
+    color: rgb(0, 0, 0);
+    border:1px solid rgb(0, 0, 0);
+    border-radius:3px;
+    background-color:rgb(177, 213, 243);
+    margin:8px 0;
+    display:inline-block;
+}
+
+#palabraclave:focus{
+    background-color: rgb(255, 255, 255);
+}
+#submitbuscar{
+    width:150px;
+    height: 40px;
+    color:rgb(253, 253, 253);
+    font-size: medium;
+    font-weight: bold;
+    padding:3px 10px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:3px;
+    background-color:rgb(42, 76, 168); 
+    transition: background-color .5s;
+}
+
+#submitbuscar:hover{
+    background-color:rgb(124, 108, 194);
+    cursor: pointer;
+  }
+
+#linea{
+    background: rgb(0, 0, 0);
+    width:600px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resultadosdiv{
+    text-align: center;
+}
+
+#resultados{
+    text-align: center;
+    display: inline-block;
+    border:5px solid rgb(85, 83, 83);
+    border-style: dotted;
+ }
+  
+  .resultimg {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    border:4px solid rgb(0, 0, 0);
+    border-radius:3px;
+    transition: border .5s;
+  }
+
+  .resultimg:hover{
+        cursor: pointer;
+        border:4px solid rgb(124, 108, 194);
+  }
+
+  #btback{
+    width:100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color:rgb(253, 253, 253);
+    font-size: medium;
+    font-weight: bold;
+    padding:3px 10px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:3px;
+    background-color:rgb(106, 168, 79); 
+    transition: background-color .5s; 
+  }
+
+  #btback:hover{
+    background-color:rgb(115, 194, 108);
+    cursor: pointer;
+  }

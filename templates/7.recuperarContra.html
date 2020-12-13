@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Recuperar password</title>
+
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/7. Recuperar contraseña/menuadmin.css') }}">
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" width="100" height="60"  border-right: 1px solid black;>
+                    </li>
+                    <li>
+                        <h1>RECUPERAR CONTRASEÑA - USUARIO</h1>  
+                    </li> 
+                 </ul>
+            </header></br>
+
+            <section id="content">
+                <div class = "s2"><center>
+                <img id="img2" src="{{ url_for('static', filename='images/indice.png') }}" width="140" height="80"  border-right: 1px solid black;></center>
+                </div>
+                <div>  
+                <center></br>Las instrucciones de recuperación de contraseña se enviarán al correo electrónico</br>
+
+                <form  method="post" action="{{ url_for('VerificacionContrasenaOlvidada') }}" onSubmit="return validar_formulario();">
+                </br><div><input class ="contra" type="email" name="email" placeholder="Correo electrónico" size = '40'>    </div>
+
+                <br><input class='boton' type='submit' name='btnConf' id='btnConf' value='CONFIRMAR' title='Click para confirmar cambio' /></br>
+                     </form>
+                </div>
+                </center><br><a href="/"><input class='boton' type='button' name='btnBak' id='btnBak' value='VOLVER' title='Regresa al inicio de sesión' /></a></div>
+                
+            </section>
+        </div>  
+    </body>
+
+    <html>

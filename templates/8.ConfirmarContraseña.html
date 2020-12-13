@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Confirmar password</title>
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/8. Confirmar contraseña/menuadmin.css') }}">
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" width="120" height="60"  border-right: 1px solid black;>
+                    </li>
+                    <li>
+                        <h1>CONFIRMAR CONTRASEÑA - USUARIO</h1>  
+                    </li> 
+                 </ul>
+            </header></br>
+
+            <section id="content">
+                <div>
+                 <form  method="post" action="{{ url_for('AsignacionContrasseñaOlvidada') }}" onSubmit="return validar_formulario();">
+                <center></br>Nueva contraseña*</br>
+                </br><div><input class ="contra" type="password" name="password" placeholder="Escriba nueva contraseña" size = '40'>    </div>
+                </br> 
+                <br>Confirmar nueva contraseña*</br>
+                </br><div><input class ="contra" type="password" name="password" placeholder="Confirme nueva contraseña" size = '40'>    </div>
+                </br> 
+                
+                <br><input class='boton' type='submit' name='btnConf' id='btnConf' value='CONFIRMAR' title='Click para confirmar cambio' /></br>
+                </form></div>
+                </center> </div>
+
+            </section>
+        </div>  
+    </body>
+
+    <html>

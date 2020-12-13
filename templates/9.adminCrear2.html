@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Crear accesorio</title>
+        <link rel="stylesheet" href="AdminCrear2.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/9. Crear/AdminCrear2.css') }}">
+
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" width="100" height="60"  border-right: 3px solid black;>
+                    </li>
+                    <li>
+                         <h1>CREAR ACCESORIO <gris> - ADMINISTRADOR</gris></h1>  
+                    </li> 
+                 </ul>
+            </header>
+
+            <section id="content">
+                <div class = "s2"><center>
+                </center>
+              
+                </div>
+                 <form  method="post" action="{{ url_for('ProcesarNuevoProdcuto') }}" onSubmit="return validar_formulario();">
+                <center><table >
+                <img id="img2" src="{{ url_for('static', filename='images/indice.png') }}" width="160" height="120"  border-right: 1px solid black;>
+                     <h3>NUEVO ACCESORIO</h3>
+                  
+                    <tr>
+                    <th> <ul><input type="text" name="producto" id="producto" placeholder="Nombre del producto" style="background: transparent;"> </ul>
+                    <br> <br> <br> 
+                    <ul> <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" style="background: transparent;"> </ul>
+                    <br> <br> </th>
+
+                    <th >
+                    <ul><img id="img2"  src="{{ url_for('static', filename='images/cloudupload_121872.png') }}" width="200" height="200" ></ul>
+                    <div class = "s3"><ul> 
+                    <input type="file" name="imagen" id="subim"></ul></th>
+                    </tr> <br>          
+               </table></center>
+                                
+                <center>              
+                <br><br> 
+                <input class='boton' type='submit' name='btnConf' id='btnConf' value='CONFIRMAR' title='Click para confirmar cambio' /></br>
+                </center></form>
+                </center><br><a href="/MenuAdmin"><input class='boton' type='button' name='btnBak' id='btnBak' value='VOLVER' title='Regresa al inicio de sesión' /></a></div>
+               
+            </section>
+        </div>  
+    </body>
+
+    <html>

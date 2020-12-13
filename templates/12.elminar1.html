@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Elimnar Producto</title>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/12. Eliminar Producto 1/menuadmin.css') }}">
+    </head>
+
+    <body> 
+        
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/logoacces.png') }}" width="60" height="60"  border-right: 3px solid black;>
+                    </li>
+                    <li>
+                        <h1>ELIMINAR PRODUCTO - ADMIISTRADOR</h1>  
+                    </li> 
+                 </ul>
+            </header>
+        
+       
+        <div class="clearfix"></div>
+
+        <div id="barraBuscar">
+            
+
+            <input id="primerimput" type="text" name="BUSCAR"
+            placeholder="Palabra Clave">
+            <input id="submitimput" type="submit" name="submit" value="Buscar" >
+        </div>  
+
+        <div class="clearfix"></div>
+
+        <div id="resultado">
+           
+            <h2>Resultado de la busqueda</h2>
+
+        </div>    
+
+            <div class="clearfix"></div>
+
+        <div id="tablaResultadosdiv">
+            <table id="tableResultados">
+            <thead>
+                <tr>
+                    <th>    PRODUCTO X  </th>
+                    <th>    PRODUCTO Y  </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><img  src="{{ url_for('static', filename='images/logoacces.png') }}" width="200" height="200" border="2px solid black"></td>
+                    <td align="center"><img  src="{{ url_for('static', filename='images/logoacces.png') }}" width="200" height="200" border="2px solid black"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div> 
+
+        <div class="clearfix"></div>
+
+        <div id="BotonEliminarDiv" align="center">
+             <a href="/EliminarProducto2"><button id="BotonEliminar" > ELIMINAR </button> </a>
+        </div>
+
+        <div id="BotonVolverDiv">
+            <a href="/MenuAdmin"><button id="BotonVolver"> VOLVER </button></a>
+        </div>
+       
+    </div>
+ 
+        
+
+    </body>
+    
+</html>

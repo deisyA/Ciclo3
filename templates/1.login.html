@@ -1,0 +1,63 @@
+<html>
+
+<head>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/1. Inicio sesión/login.css') }}">
+    <title>Home</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <ul>
+                <li>
+                    <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" width="60" height="60"  border-right: 2px solid black;>
+                </li>
+                <li>
+                                       
+                    <h1>MENU<gris> - INICIO DE SESIÓN</gris></h1>  
+                </li> 
+             </ul>
+        </header>  
+        
+        <div class="clearfix"></div>
+        <br>
+        <br>
+
+    <div id="tablaResultadosdiv">
+        <table id="tableResultados">
+        <thead>
+            <tr>
+                <h3>GESTIÓN DE INVENTARIOS</h3>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center"><img  src="{{ url_for('static', filename='images/indice.png') }}" width="200" height="200" ></td>
+            </tr>        
+        </tbody>
+        </table>
+    </div> 
+    <div class="clearfix"></div>
+
+<div>
+    <table>
+        <form method="post" action="{{ url_for('procesarlogin') }}" onSubmit="return validar_formulario();">
+      
+            <p><input type="text" name="usuario" id="usuario"placeholder="Usuario"size = '35'></p>
+            <br>      
+            <p><input type="password" name="password" id="contraseña" placeholder="Contraseña" size = '35'></p>
+            <br>
+            <p><input type="submit" id="sublog" value="Login"></p>
+
+        </form>
+        <br>
+        <a href="/ContrasenaOlvidada"><h4>¿Olvidaste la contraseña?</h4></a>
+    </table>
+</div>
+
+</body>
+
+
+</html>

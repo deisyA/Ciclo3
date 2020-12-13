@@ -1,0 +1,44 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Actualización de inventarios</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/10. Actualizar producto/ActualizarProducto.css') }}">
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/logoacces.png') }}" title="Página principal" width="60" height="60"  border-right: 1px solid black;>
+                    </li>
+                    <li>
+                        <h1>ADMINISTRADOR - ACTUALIZAR PRODUCTO</h1>  
+                    </li> 
+                 </ul>
+            </header></br>
+            <section id="content">
+                <div id=cajafondo>
+                    <div id="barraBuscar">
+                        <input id="palabraclave" type="text" name="BUSCAR"placeholder="Palabra Clave">
+                        <input id="submitbuscar" type="submit" name="submit" value="Buscar producto" >
+                    </div> 
+                    <div id="linea">
+                    </div>
+                    <p class="textos">RESULTADOS</p>
+                    <div id="resultadosdiv">
+                        <table id="resultados">
+                            <tr>
+                              <td><a href="/ActualizarProducto2"><button><img class="resultimg" id="img2" src="{{ url_for('static', filename='images/indice.png') }}"><h2>Nombre</h2></button></a></td>
+                              <td><a href="/ActualizarProducto2"><button><img class="resultimg" id="img3" src="{{ url_for('static', filename='images/indice.png') }}"><h2>Nombre</h2></button></a></td>
+                            </tr>
+                          </table>
+                    </div>
+                    <br><a href="/MenuAdmin"><input class='boton' type='button' name='btback' id='btback' value='VOLVER' title='Regresa al inicio de sesión' /></a>
+                </div> 
+            </section>
+        </div> 
+    </body>
+
+    <html>

@@ -1,0 +1,41 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Actualización de inventarios</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/3. MENÚ USUARIO Actualización de inventarios/Actualizar inventario.css') }}">
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" alt="Página principal" width="60" height="60"  border-right: 1px solid black;>
+                    </li>
+                    <li>
+                        <h1>USUARIO</h1>  
+                    </li> 
+                 </ul>
+            </header></br>
+            <section id="content">
+                <h1 id="titulo1">Actualización de inventarios</h1>
+                <p class="textos">Ingrese Palabra clave* :</p>
+                <div id="barraBuscar">
+                    <input id="palabraclave" type="text" name="BUSCAR"placeholder="Palabra Clave">
+                    <input id="submitbuscar" type="submit" name="submit" value="Buscar producto" >
+                </div> 
+                <div id="linea">
+                </div>
+                <p class="textos">Doble clic en la imagen para actualizar</p>
+                <div id="resultados">
+                        <a href="/MenuUserActualizarInvetario"><button><img class="resultimg" id="img2" src="{{ url_for('static', filename='images/indice.png') }}"><h2>Nombre</h2></button></a>
+                         <a href="/MenuUserActualizarInvetario"><button><img class="resultimg" id="img3" src="{{ url_for('static', filename='images/indice.png') }}"><h2>Nombre</h2></button></a>
+
+                </div>
+
+            </section>
+        </div> 
+    </body>
+
+    <html>

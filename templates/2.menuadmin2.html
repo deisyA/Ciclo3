@@ -1,0 +1,86 @@
+<html>
+    <head>
+         <meta charset="utf-8">
+        <title>Menu Administrador</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/2. menu administrador/menuadmin.css') }}">
+
+
+    </head>
+
+    <body> 
+        <div id="container">
+
+            <header>
+                <ul>
+                    <li>
+                        <img id="img1" src="{{ url_for('static', filename='images/indice.png') }}" width="60" height="60"  border-right: 2px solid black;>
+                    </li>
+                    <li>
+                        <h1>MENU - ADMINISTRADOR</h1>  
+                    </li> 
+                 </ul>
+            </header>  
+            
+            <div class="clearfix"></div>
+            <br>
+            <br>
+        
+        <div id="tablaResultadosdiv">
+            <table id="tableResultados">
+            <thead>
+                <tr>
+
+                    <th>  <a href="/RegistrarNuevoUsuario"> <button>
+                        <ul>
+                        <li>
+                            <img src="{{ url_for('static', filename='images/newuser.JPG') }}" width="80" height="80">
+                        </li>
+                        <li>
+                            <h2>REGISTRO NUEVO USUARIO</h2>  
+                        </li> 
+                     </ul>
+                    </button>  </a></th>
+                    <th>  <a href="/NuevoProducto"> <button>
+                        <ul>
+                        <li>
+                            <img  src="{{ url_for('static', filename='images/NEWPRODUCT.JPG') }}" width="80" height="80">
+                        </li>
+                        <li>
+                            <h2>NUEVO PRODUCTO</h2>  
+                        </li> 
+                     </ul>
+                    </button>  </a>  </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="/ActualizarProducto"><button>
+                        <ul>
+                            <li>
+                                <img src="{{ url_for('static', filename='images/update.JPG') }}" width="80" height="80">
+                            </li>
+                            <li>
+                                <h2>ACTUALIZAR PRODCUTO</h2>
+                            </li> 
+                         </ul>   
+                    </button></a></td>
+                    <td><a href="/EliminarProducto"><button>
+                        <ul>
+                            <li>
+                                <img src="{{ url_for('static', filename='images/DELETE.JPG') }}" width="80" height="80">
+                            </li>
+                            <li>
+                                <h2>ELIMINAR PRODCUTO</h2>  
+                            </li> 
+                         </ul>
+                    </button></a></td>
+                </tr>
+            </tbody>
+            </table>
+        </div> 
+        <div class="clearfix"></div>
+    </div> 
+    <div class="clearfix"></div>
+    </body>
+
+    <html>

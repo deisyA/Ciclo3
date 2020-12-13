@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{ text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+        
+}
+p{font-family: sans-serif;
+    text-align: center;
+
+
+}
+h2{text-align: center;
+    size: 80px;
+}
+h3{ font-family: sans-serif;
+    font-size: 18px;
+    size: 40px;
+    text-align: center;
+    
+   
+}
+
+gris{
+    color: gray;
+
+}    
+
+table{
+    width: 90%;
+
+    
+}
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 15px solid rgb(177, 213, 243);
+}
+#container{
+    width: 45%;
+
+    margin: 0 auto ;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-top: 2px;
+   
+  
+}
+header {
+    float: left;
+    background: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;   
+    line-height: 60px;  
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    list-style: none;
+   
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    margin-right: 4%;
+
+    
+
+}
+li ul{
+    border-bottom: 10px solid black;
+}
+
+#img1{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+#content{
+    background: rgb(207, 226, 243);
+    padding-top: 50px;
+    padding-bottom: 20px;
+ 
+    
+    
+    
+}
+#btnConf{
+
+    border-radius: 5px;
+    width:180px;
+    height: 35px;
+    color:rgb(253, 253, 253);
+    font-size: medium; 
+    font-weight: bold; 	
+    padding:3px 10px;border:1px solid rgb(0, 0, 0); 
+    border-radius:3px;	background-color:rgb(106, 168, 79);
+
+    
+}
+
+#btnBak{
+    width: 15%;
+    height: 5%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 0;
+
+}
+.contra{
+    height: 20px;
+}
+
+.s2{
+    background-color: rgb(207, 226, 243);
+    border-left: 8px solid  rgb(207, 226, 243);
+    border-right: 8px solid rgb(207, 226, 243);
+    padding-bottom: 15px;
+}
+#subim{ height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background: rgb(41, 122, 189);
+    font-size: 20px ;
+    color: white;
+    border: 2px solid rgb(8, 51, 87);}
+
+#producto {
+    height: 30px;
+    width: 250px;
+    font-size: 16px ;
+    border: 1px solid black;
+    margin-top: 60px;
+
+}
+
+#cantidad {
+    height: 30px;
+    width: 250px;
+    font-size: 16px ;
+    border: 1px solid black;
+}
