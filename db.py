@@ -3,7 +3,7 @@ import sqlite3
 
 def conectar():
     try:
-        sal = sqlite3.connect('C:\\Users\\DEICY\\Desktop\\inventario') 
+        sal = sqlite3.connect('C:\\Users\\DEICY\\Desktop\\inventario.db') 
     except:
         sal = None
     return sal  
@@ -15,7 +15,7 @@ def desconectar(con):
         con = None
     return con
 
-def ejecutar_consulta_sel(con,sql):
+def ejecutar_select(con,sql):
     try:
         cur = con.cursor()                  # Crea un cursor (un lugar para almacenar los resultados de la consulta)
         sal = cur.execute(sql)
@@ -25,7 +25,7 @@ def ejecutar_consulta_sel(con,sql):
         sal = None
     return sal
 
-def ejecutar_consulta_acc(con,sql,datos):
+def ejecutar_query(con,sql,datos):
     try:
         cur = con.cursor()                  # Crea un cursor (un lugar para almacenar los resultados de la consulta)
         sal = cur.execute(sql,datos)
